@@ -24,7 +24,7 @@ end
 function M.run_toggle_command(key)
     local harpoon = require("harpoon")
     harpoon.logger:log("toggle by keymap '" .. key .. "'")
-    harpoon.ui:select_menu_item()
+    harpoon.ui:toggle_quick_menu()
 end
 
 ---TODO: I don't know how to do what i want to do, but i want to be able to
