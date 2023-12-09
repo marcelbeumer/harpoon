@@ -63,7 +63,7 @@ function M.setup_autocmds_and_keymaps(bufnr)
         bufnr,
         "n",
         "<ESC>",
-        "<Cmd>lua require('harpoon.buffer').run_toggle_command('<ESC>')<CR>",
+        "<Cmd>lua require('harpoon.buffer').run_toggle_command('ESC')<CR>", -- <ESC> will select item somehow
         { silent = true }
     )
     vim.api.nvim_buf_set_keymap(
